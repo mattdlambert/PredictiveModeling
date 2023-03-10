@@ -363,45 +363,61 @@ display: none;
 topics were probably some of the most impactful – I was finally forced
 to learn RMarkdown. I have always seen markdown documents and mentions
 of tips for markdown documents, but never understood the importance and
-usability of these documents. I also learned the general process for
-modeling. In previous courses and tutorials, I’ve only learned the
-specific modeling technique of modeling, and not the circular and ever
-evolving modeling process, and broader data science process.</p>
+usability of these documents.</p>
+<p>I also learned the specific equation for calculating the <em>expected
+Test Mean Squared Error</em>
+<code>Expected Test MSE = Variance of Forecasting + (Bias of Forecasting)^2 + Variance of Random Noise</code></p>
 </div>
 <div id="week-2-data-exploration" class="section level4">
 <h4>Week 2: Data Exploration</h4>
 <p>In this week, I learned how to use summary statistics to explore
-data. Teh <code>summary()</code> function in R is a very useful tool to
-get a feel of your data before you begin any analysis. I also learned
-usefule tips to explore data via visualization as well.</p>
+data. The <code>summary()</code> function in R is a very useful tool to
+get a feel of your data before you begin any analysis.</p>
+<p>I also learned useful tips to explore data via visualization as well.
+Plotting a density plot of one of the variables in your data set is a
+quick way to see a graphical representation of the distribution of the
+variable.</p>
 </div>
 <div id="week-3-linear-regression" class="section level4">
 <h4>Week 3: Linear Regression</h4>
 <p>In week three, I learned all about the regression model. I learned
-how easy it is to actually build a regression model in R, what the model
-summary is telling me about my model, and the assumptions that must be
-made for using linear regression as an analysis tool.</p>
+how easy it is to actually build a regression model in R, that running
+the same <code>summary()</code> function as above shows us the
+coefficients of the independent variables.</p>
+<p>I also learned how to interpret which variables are statistically
+significant to the response, or dependent variable – typically p-values
+less than 0.05 are considered statistically significant.</p>
 </div>
 <div id="week-4-classification" class="section level4">
 <h4>Week 4: Classification</h4>
 <p>Week four was all about classification. I learned how to run a
 regression model that predicts the probability on a binary scale. This
-model si useful when your response variable is not a continuous,
+model is useful when your response variable is not a continuous,
 quantitative response, but rather a qualitative response.</p>
+<p>I also learned about the performance measures for a binary
+classification model: <strong>PRECISION</strong> <span class="math display">\[
+Precision = \frac{TP} {TP+FP}
+\]</span> where TP = True Positives and FP = the False Positives
+<strong>RECALL</strong> <span class="math display">\[Recall = \frac{TP}
+{TP + FN}\]</span> where FN = False Negatives</p>
 </div>
 <div id="week-5-generalized-linear-models" class="section level4">
 <h4>Week 5: Generalized Linear Models</h4>
 <p>In this week, I learned about Generalized Linear Models. Generalized
 Linear Models (GLMs) are a family of statistical models used to analyze
 relationships between variables. Unlike traditional linear regression,
-which assumes that the response variable is normally dis- tributed and
+which assumes that the response variable is normally distributed and
 continuous, GLMs can handle a wider range of data types, including
 binary (yes/no) outcomes, count data, and other non-normal
 distributions.</p>
+<p>I also learned about two models that are specific to two different
+types of distribution – Poisson for discrete, non-negative counts; and
+Gamma for continuous non-negative response variables. Both of these
+distributions are also skewed to the right.</p>
 </div>
 <div id="week-6-tree-based-models" class="section level4">
 <h4>Week 6: Tree-Based Models</h4>
-<p>This week’s topics were abotu Tree-based models. Tree-based models
+<p>This week’s topics were about Tree-based models. Tree-based models
 are a type of machine learning algorithm that use decision trees to make
 predictions. A decision tree is a flowchart-like structure that models
 decisions and their possible consequences. In the context of machine
@@ -410,6 +426,10 @@ variable by making a sequence of binary decisions based on the values of
 the input features. Each internal node of the tree represents a decision
 based on a single feature, while each leaf node represents the value of
 the target variable.</p>
+<p>I also learned that Tree-based models are much easier to explain to
+an audience than the previous models we learned in the course up to this
+point. Tree-based models can be printed and easily show the decision
+making process of the model for the audience.</p>
 </div>
 <div id="week-7-unsupervised-methods" class="section level4">
 <h4>Week 7: Unsupervised Methods</h4>
@@ -420,9 +440,18 @@ for. Instead, it relies on finding patterns and structure in the data
 itself. The goal of unsupervised learning is to identify meaningful
 relationships and groupings within the data, which can then be used to
 make predictions or gain insights.</p>
+<p>Principal Component Analysis was one of the more interesting topcs
+for me in this section. PCA allows the practitioner to reduce a
+multi-dimensional data set into a smaller dimension that makes it easier
+to analyze without losing the information from the multi-dimensional
+structure.</p>
 </div>
 <div id="week-8-delivering-results" class="section level4">
 <h4>Week 8: Delivering Results</h4>
+<p>The final week of the course, I learned how vital it was to keep up
+with the documentation of your work throughout the data analysis
+process. I also learned that you can add custom CSS to presentations
+when writing in RMarkdown.</p>
 </div>
 
 
